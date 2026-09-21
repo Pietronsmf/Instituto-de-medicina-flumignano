@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instituto Flumignano de Medicina Rio de Janeiro & Curitiba</title>
+<meta name="description" content="Instituto Flumignano de Medicina teleconsultas e atendimento presencial no Rio de Janeiro e em Curitiba. Mais que profissão, a medicina, para nós, é missão. Fundado em 1998.">
+<link rel="icon" type="image/png" href="assets/brasao-web.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= SPRITE DE ÍCONES ================= -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 6.6a5.5 5.5 0 0 0-9.8-2 5.5 5.5 0 0 0-9.8 2c0 3.6 3.4 6.4 8.6 11.2L12 19l1.2-1.1c5.2-4.8 8.6-7.6 7.6-11.3Z"/><path d="M3.5 12h3l1.5-3 2.5 6 2-4 1.5 1h4.5"/></symbol>
+    <symbol id="i-hormone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="4"/><circle cx="16" cy="16" r="4"/><path d="M11 11l2 2M8 5.5v5M5.5 8h5M14 16h4"/></symbol>
+    <symbol id="i-venus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 15v7M9 19h6"/></symbol>
+    <symbol id="i-sport" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4.5" r="1.8"/><path d="M5 21l3-5 3 1.5 1-4 3 3h3M8 16l-1-4 4-2 3 3"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a2.5 2.5 0 0 0-5 0 3 3 0 0 0-2 5 3 3 0 0 0 1 4.5A2.5 2.5 0 0 0 9 19a2 2 0 0 0 3 .5Z"/><path d="M12 5a2.5 2.5 0 0 1 5 0 3 3 0 0 1 2 5 3 3 0 0 1-1 4.5A2.5 2.5 0 0 1 15 19a2 2 0 0 1-3 .5Z"/><path d="M12 5v14.5"/></symbol>
+    <symbol id="i-psy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 20v-3.2A7 7 0 1 0 5 10.5"/><path d="M5 10.5 3 12l2 1.3V16a2 2 0 0 0 2 2h1.5"/><path d="M9.5 9.5a2.5 2.5 0 0 1 3.6 3.2"/></symbol>
+    <symbol id="i-psychiatry" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a8 8 0 1 1 8-8c0 1.5-.6 2.4-1.6 2.4H16l-.6 2.2A2 2 0 0 1 13.5 21Z"/><path d="M12 13.5a2 2 0 1 0-2-2"/><circle cx="12" cy="13.7" r=".4" fill="currentColor"/></symbol>
+    <symbol id="i-nutri" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8c-1-2-3.5-2.5-5.5-1C4 8.7 3.7 12 5 15c1 2.4 2.8 4.5 4.5 4.5 1 0 1.5-.5 2.5-.5s1.5.5 2.5.5c1.7 0 3.5-2.1 4.5-4.5"/><path d="M12 8c1-2 3.5-2.5 5.5-1"/><path d="M12 8V4M12 4c0-1 1-2 2.5-2"/></symbol>
+    <symbol id="i-geri" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="4.5" r="2"/><path d="M10 8c-2 0-3 1.4-3 3v5M7 12H5M10 16l-1.5 5M10 16l1.5 5M16 5v16M16 5c1.5 0 2.5 1.2 2.5 3"/></symbol>
+    <symbol id="i-trans" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="13" r="5"/><path d="M11 8V2M8 4h6M14.5 9.5 19 5M19 5h-3.5M19 5v3.5"/></symbol>
+    <symbol id="i-work" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M12 11v3"/></symbol>
+    <symbol id="i-family" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="7" r="2.5"/><circle cx="17" cy="8" r="2"/><path d="M3 20v-2a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v2M14.5 20v-1a3 3 0 0 1 3-3h0a3 3 0 0 1 3 3v1"/></symbol>
+    <symbol id="i-syringe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m18 2 4 4M19 5l-9 9M14.5 6.5l3 3M4 20l-1.5 1.5M4 20l4-1 8.5-8.5-3-3L4 16Z"/><path d="m9 11 1.5 1.5M11.5 8.5 13 10"/></symbol>
+    <symbol id="i-stetho" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v5a4 4 0 0 0 8 0V3M5 3H3.5M5 3h0M13 3h1.5M13 3h0M9 16v1a4 4 0 0 0 8 0v-2"/><circle cx="18" cy="12" r="2.2"/></symbol>
+    <symbol id="i-waves" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5 12h2l1.5-4 2.5 8 1.5-6 1.5 4 1.5-2H19"/></symbol>
+    <symbol id="i-ecg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M5 12h2.5l1.5-3 2 6 1.5-4 1 1h4.5"/></symbol>
+    <symbol id="i-micro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h12M9 18l-1-3M14 7l2 2-4 4-2-2 4-4Z"/><path d="M10 5 8.5 6.5M16 14a5 5 0 0 1-5 4"/></symbol>
+    <symbol id="i-tube" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v15a3 3 0 0 0 6 0V2M8 2h8M9 9h6"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="13" height="12" rx="2"/><path d="m15.5 10 6-3v10l-6-3"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-hands" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.3-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 3.5C19 16.7 12 21 12 21Z"/><path d="M9.5 11.5 12 9l2.5 2.5"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2Z"/><path d="M4 19a2 2 0 0 1 2-2h13M9 7h6M9 11h6"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-5 8a2 2 0 0 0 1.7 3h10.6A2 2 0 0 0 19 17l-5-8V3"/><path d="M7.5 14h9"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h3.5l1.5 5-2 1.2a13 13 0 0 0 6 6l1.2-2 5 1.5V19a2 2 0 0 1-2.2 2A17 17 0 0 1 4 6.2 2 2 0 0 1 6 4Z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .7.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.8-1c.2-.2.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.7-.1 1.4Z"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V7c0-.8.5-1 1-1h2V2.5h-3C11.5 2.5 10 4 10 6.5V9H7.5v3.5H10V22h3.5v-9.5H16l.5-3.5H13.5Z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-yt" viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22.4 12 31 31 0 0 0 22 8.2ZM10 15.1V8.9l5.2 3.1Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-mission" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></symbol>
+    <symbol id="i-vision" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-values" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v5c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-grad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.5 12 4l10 4.5-10 4.5Z"/><path d="M6 10.5V15c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 8.5V14"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 21V10M20 21V10M3 10l9-5 9 5Z"/><path d="M8 21v-6M12 21v-6M16 21v-6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 10v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v1M16 5a3 3 0 0 1 0 6M17 14a5 5 0 0 1 4 5v1"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-scalpel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 14 6c1.5-1.5 4-2.5 6-2.5-.2 2.4-1 4.6-2.5 6L8 19l-5 1Z"/><path d="M3 17l3 3"/></symbol>
+    <symbol id="i-vein" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v5a3 3 0 0 0 3 3 3 3 0 0 1 3 3v2a3 3 0 0 0 3 3v1"/><path d="M7 2H4M7 2h3M17 22h3M14 11l3-2"/></symbol>
+    <symbol id="i-cut" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 8.5 20 20M8.5 15.5 20 4"/></symbol>
+  </defs>
+</svg>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="header">
+  <div class="container">
+    <a href="#top" class="brand" aria-label="Instituto Flumignano de Medicina">
+      <img class="brand__crest" src="assets/brasao-web.png" alt="Brasão Flumignano">
+      <span class="brand__text">
+        <span class="brand__name">Flumignano</span>
+        <span class="brand__sub">Instituto de Medicina</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <a href="#equipe">Corpo Clínico</a>
+      <a href="#sobre">Quem Somos</a>
+      <a href="#nucleos">Núcleos</a>
+      <a href="#exames">Exames</a>
+      <a href="#conteudo">Biblioteca</a>
+      <a href="#contato">Contato</a>
+      <a href="https://wa.me/5521987561627" class="btn btn-gold nav-cta" target="_blank" rel="noopener">Agendar</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="https://wa.me/5521987561627" class="btn btn-gold nav-cta" target="_blank" rel="noopener">
+        <svg><use href="#i-wa"/></svg> Agendar
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="nav-backdrop" id="navBackdrop"></div>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <video class="hero__video" autoplay muted loop playsinline preload="auto" disablepictureinpicture>
+    <source src="medicos.mp4" type="video/mp4">
+  </video>
+  <div class="hero__overlay"></div>
+
+  <div class="hero__social" aria-label="Redes sociais">
+    <a href="https://wa.me/5521987561627" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>
+    <a href="https://www.facebook.com/pages/Instituto-Flumignano-de-Medicina/126873914071479" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+    <a href="https://www.youtube.com/shorts/F77Ms5kDyag" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
+  </div>
+
+  <div class="container hero__inner">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <span class="eyebrow light"><span class="eyebrow__text"><a href="https://www.flumignano.com/INSTITUTO_FLUMIGNANO_DE_MEDICINA.htm" target="_blank" rel="noopener">Rio de Janeiro</a> · <a href="https://institutoflumignano.com.br/" target="_blank" rel="noopener">Curitiba</a><br>Telemedicina Brasil</span></span>
+        <h1>Mais que profissão,<br>a medicina, para nós,<br>é <span class="accent">missão.</span></h1>
+        <p class="hero__lead">Há mais de duas décadas, honramos amissão de cuidar da vida com excelência, ética e profundo respeito à dignidade humana</p>
+        <div class="hero__cta">
+          <a href="https://wa.me/5521987561627" class="btn btn-gold" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg> Agendar no WhatsApp</a>
+          <a href="#nucleos" class="btn btn-ghost">Conheça os núcleos</a>
+        </div>
+        <div class="hero__badge">
+          <span class="dot"></span>
+          <span><b>Fundado em 1998</b> · Pioneiros na internet desde 2000</span>
+        </div>
+      </div>
+
+      <aside class="hero__card">
+        <h3>Atendimento humanizado</h3>
+        <p>Equipes multidisciplinares e núcleos de especialidades em duas cidades.</p>
+        <div class="mini-stats">
+          <div><b data-count="14" data-suffix="+">14+</b><span>Núcleos de especialidade</span></div>
+          <div><b data-count="2">2</b><span>Unidades de atendimento</span></div>
+          <div><b data-count="25" data-suffix="+">25+</b><span>Anos de história</span></div>
+          <div><b>100%</b><span>Ética e acolhimento</span></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <a href="#sobre" class="scroll-cue" aria-label="Rolar para baixo">
+    <span class="mouse"></span>
+    <span>Explorar</span>
+  </a>
+</section>
+
+
+<!-- ================= CORPO CLÍNICO ================= -->
+<section class="section soft-2" id="equipe">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow center">Corpo Clínico</span>
+      <h2 class="section-title">Profissionais que vivem a medicina como missão</h2>
+      <p class="section-lead">Uma equipe multidisciplinar no Rio de Janeiro e em Curitiba, unida por uma visão científica e humana que alia conhecimento, ética e acolhimento.</p>
+    </div>
+
+    <div class="team-grid" id="teamAll"></div>
+
+    <p class="team-hint reveal">Clique em um profissional para ver a foto ampliada e o currículo completo.</p>
+  </div>
+</section>
+
+<!-- ================= QUEM SOMOS ================= -->
+<section class="section" id="sobre">
+  <div class="container about__grid">
+    <div class="about__visual reveal">
+      <div class="about__crest-wrap">
+        <img src="assets/brasao-web.png" alt="Brasão do Instituto Flumignano">
+        <div class="about__motto">“Verum gaudium res severa est”
+          <small>"A verdadeira alegria é coisa séria"</small>
+        </div>
+      </div>
+    </div>
+    <div class="about__text reveal d1">
+      <span class="eyebrow">Quem Somos</span>
+      <h2 class="section-title">Onde a ciência e o humanismo caminham juntos</h2>
+      <p>O Instituto Flumignano de Medicina foi criado em <strong>1998</strong>, por <strong>Izidoro Flumignan</strong> e <strong>Eiko Hiroki Flumignan</strong> para estabelecer seus três filhos médicos numa instituição inspirada com sólidos princípios éticos e responsabilidade social.</p>
+
+      <div class="mvv">
+        <div class="mvv__item">
+          <div class="mvv__icon"><svg><use href="#i-mission"/></svg></div>
+          <div><h4>Missão</h4><p>Exercer com alegria a missão que nasce do encontro entre ciência e a  humanidade, iluminando cada vida com conhecimento, cuidado e propósito.</p></div>
+        </div>
+        <div class="mvv__item">
+          <div class="mvv__icon"><svg><use href="#i-vision"/></svg></div>
+          <div><h4>Visão</h4><p>Praticar condutas transparentes tendo como princípio o humanismo, a ética e a bondade.</p></div>
+        </div>
+        <div class="mvv__item">
+          <div class="mvv__icon"><svg><use href="#i-values"/></svg></div>
+          <div><h4>Valores</h4><p>Cultivar em todas nossas condutas a  ética e a empatia  mantendo a humildade da atitude do aprendiz diante das infinitas possibilidades que a coexistência humana nos revela.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NÚCLEOS / ESPECIALIDADES ================= -->
+<section class="section soft" id="nucleos">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow center">Núcleos de Especialidade</span>
+      <h2 class="section-title">Cuidado completo para a sua saúde</h2>
+      <p class="section-lead">Equipes multidisciplinares reunidas em núcleos de atendimento organizados por unidade dedicados a cada etapa da sua jornada de cuidado.</p>
+    </div>
+
+    <!-- RIO DE JANEIRO -->
+    <div class="team-block reveal">
+      <div class="team-block__head">
+        <div class="team-block__flag"><svg><use href="#i-pin"/></svg></div>
+        <div><h3>Rio de Janeiro</h3><p>Galeria Menescal · Copacabana</p></div>
+        <span class="team-block__count">10 núcleos</span>
+      </div>
+      <div class="cards-grid">
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-stetho"/></svg></div><h3>Clínica Médica</h3><p>Clínicos gerais especialistas em medicina de adultos.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-hormone"/></svg></div><h3>Endocrinologia</h3><p>Alterações e desequilíbrios hormonais e metabólicos.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-heart"/></svg></div><h3>Cardiologia</h3><p>Doenças relacionadas ao sistema cardiovascular.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-values"/></svg></div><h3>Transtornos Alimentares e Medicina Preventiva</h3><p>Prevenção e cuidado dos transtornos alimentares.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-scalpel"/></svg></div><h3>Cirurgia Plástica</h3><p>Procedimentos reparadores e estéticos.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-psy"/></svg></div><h3>Psicologia</h3><p>Comportamento e funções mentais.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-brain"/></svg></div><h3>Neuropsicologia</h3><p>Avaliação cognitiva e terapia cognitivo-comportamental.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-vein"/></svg></div><h3>Angiologia e Cirurgia Vascular</h3><p>Doenças dos vasos e da circulação.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-sport"/></svg></div><h3>Fisioterapia</h3><p>Reabilitação e recuperação do movimento.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-nutri"/></svg></div><h3>Nutrição</h3><p>Reeducação alimentar e nutrição clínica.</p></article>
+      </div>
+    </div>
+
+    <!-- CURITIBA -->
+    <div class="team-block reveal">
+      <div class="team-block__head">
+        <div class="team-block__flag"><svg><use href="#i-pin"/></svg></div>
+        <div><h3>Curitiba</h3><p>Alto da Rua XV</p></div>
+        <span class="team-block__count">13 núcleos</span>
+      </div>
+      <div class="cards-grid">
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-heart"/></svg></div><h3>Cardiologia</h3><p>Doenças relacionadas ao sistema cardiovascular.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-hormone"/></svg></div><h3>Endocrinologia</h3><p>Alterações e desequilíbrios hormonais e metabólicos.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-venus"/></svg></div><h3>Ginecologia</h3><p>Aparelho reprodutor feminino e mamas.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-sport"/></svg></div><h3>Medicina Esportiva</h3><p>Orientação das práticas esportivas e do movimento.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-brain"/></svg></div><h3>Neurologia</h3><p>Estudo do cérebro e de suas funções.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-psy"/></svg></div><h3>Psicologia</h3><p>Comportamento e funções mentais.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-psychiatry"/></svg></div><h3>Psiquiatria</h3><p>Diagnóstico e tratamento da saúde mental.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-nutri"/></svg></div><h3>Nutrição</h3><p>Alimentação saudável e nutrição clínica.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-geri"/></svg></div><h3>Geriatria</h3><p>Cuidado integral e cuidados paliativos ao idoso.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-trans"/></svg></div><h3>Núcleo de Saúde Trans</h3><p>Endocrinologia, nutrição e psicologia personalizadas.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-work"/></svg></div><h3>Medicina Ocupacional</h3><p>Relação entre o ambiente de trabalho e a saúde.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-family"/></svg></div><h3>Médico de Família e Comunidade</h3><p>Acompanhamento contínuo de toda a família.</p></article>
+        <article class="spec-card"><div class="spec-card__icon"><svg><use href="#i-waves"/></svg></div><h3>Doppler Transcraniano</h3><p>Avaliação dos vasos cerebrais.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXAMES ================= -->
+<section class="section" id="exames">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow center">Exames e Procedimentos</span>
+      <h2 class="section-title">Diagnóstico com precisão e tecnologia</h2>
+      <p class="section-lead">Exames especializados realizados pela nossa equipe, com avaliação complementar e acompanhamento médico.</p>
+    </div>
+    <!-- RIO DE JANEIRO -->
+    <div class="team-block reveal">
+      <div class="team-block__head">
+        <div class="team-block__flag"><svg><use href="#i-pin"/></svg></div>
+        <div><h3>Rio de Janeiro</h3><p>Galeria Menescal · Copacabana</p></div>
+        <span class="team-block__count">1 exame</span>
+      </div>
+      <div class="exam-grid">
+        <div class="exam"><div class="exam__icon"><svg><use href="#i-ecg"/></svg></div><h4>Eletrocardiograma</h4><p>Avaliação da atividade elétrica do coração.</p></div>
+      </div>
+    </div>
+
+    <!-- CURITIBA -->
+    <div class="team-block reveal">
+      <div class="team-block__head">
+        <div class="team-block__flag"><svg><use href="#i-pin"/></svg></div>
+        <div><h3>Curitiba</h3><p>Alto da Rua XV</p></div>
+        <span class="team-block__count">4 exames</span>
+      </div>
+      <div class="exam-grid">
+        <div class="exam"><div class="exam__icon"><svg><use href="#i-eye"/></svg></div><h4>Colposcopia</h4><p>Exame detalhado do colo do útero e da vagina.</p></div>
+        <div class="exam"><div class="exam__icon"><svg><use href="#i-waves"/></svg></div><h4>Doppler Transcraniano</h4><p>Avaliação dos vasos cerebrais e pesquisa de embolia.</p></div>
+        <div class="exam"><div class="exam__icon"><svg><use href="#i-ecg"/></svg></div><h4>Eletrocardiograma</h4><p>Avaliação da atividade elétrica do coração.</p></div>
+        <div class="exam"><div class="exam__icon"><svg><use href="#i-tube"/></svg></div><h4>Exame de Líquor</h4><p>Avaliação complementar diagnóstica de diversas doenças.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAIXA TELEMEDICINA ================= -->
+<section class="tele">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow light">Teleconsultas e Presenciais</span>
+      <h2>Cuidado de qualidade, perto ou à distância</h2>
+      <p>Atendemos por videoconferência e presencialmente nas unidades do Rio de Janeiro e de Curitiba. Agende sua consulta de forma rápida e segura pelo WhatsApp.</p>
+    </div>
+    <div class="tele__actions reveal d1">
+      <a href="https://wa.me/5521987561627" class="btn btn-gold" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg> Agendar consulta</a>
+      <a href="#contato" class="btn btn-ghost">Ver unidades</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BIBLIOTECA & PESQUISAS ================= -->
+<section class="section" id="conteudo">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow center">Conhecimento Aberto</span>
+      <h2 class="section-title">Educação, pesquisa e saúde para todos</h2>
+      <p class="section-lead">Compartilhamos conhecimento médico de forma acessível uma tradição do instituto, pioneiro na internet desde o ano 2000.</p>
+    </div>
+    <div class="feature-grid">
+      <a class="feature f1 reveal" href="biblioteca.html">
+        <div class="feature__icon"><svg><use href="#i-book"/></svg></div>
+        <div class="feature__body">
+          <h3>Biblioteca Online</h3>
+          <p>Acervo acadêmico aberto (CC-BY-SA), ativo desde o ano 2000, com artigos e estudos.</p>
+          <span class="more">Acessar biblioteca <svg><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="feature f2 reveal d1" href="pesquisas.html">
+        <div class="feature__icon"><svg><use href="#i-flask"/></svg></div>
+        <div class="feature__body">
+          <h3>Pesquisas e Estudos</h3>
+          <p>Núcleo de Pesquisas Médicas estudos clínicos com rigor metodológico e ético.</p>
+          <span class="more">Conhecer pesquisas <svg><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="feature f3 reveal d2" href="educacao-saude.html">
+        <div class="feature__icon"><svg><use href="#i-grad"/></svg></div>
+        <div class="feature__body">
+          <h3>Educação em Saúde</h3>
+          <p>Cursos e orientação para pacientes, como o curso online para pessoas com diabetes.</p>
+          <span class="more">Ver conteúdos <svg><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="feature f4 reveal d3" href="https://izeta.com.br/" target="_blank" rel="noopener">
+        <div class="feature__icon"><svg><use href="#i-cap"/></svg></div>
+        <div class="feature__body">
+          <h3>Instituto iZETA</h3>
+          <p>Instituto de educação parceiro formação e capacitação em saúde e ciências.</p>
+          <span class="more">Visitar o iZETA <svg><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section class="section soft" id="contato">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow center">Contato e Unidades</span>
+      <h2 class="section-title">Estamos à sua disposição</h2>
+      <p class="section-lead">Atendimento por teleconsulta e presencial. Fale conosco pelo WhatsApp ou visite uma de nossas sedes.</p>
+    </div>
+
+    <div class="contact__grid">
+      <!-- RIO -->
+      <article class="unit reveal" id="unidade-rio">
+        <div class="unit__head">
+          <div class="unit__flag"><svg><use href="#i-pin"/></svg></div>
+          <div><h3>Rio de Janeiro</h3><span>Galeria Menescal · Copacabana</span></div>
+        </div>
+        <ul class="unit__list">
+          <li><svg><use href="#i-pin"/></svg><span>Av. Nossa Senhora de Copacabana, 664 / 704 Galeria Menescal, CEP 22050-001 Rio de Janeiro/RJ</span></li>
+          <li><svg><use href="#i-phone"/></svg><span><a href="tel:+552125480472">+55 (21) 2548-0472</a> · <a href="tel:+552125491155">+55 (21) 2549-1155</a></span></li>
+          <li><svg><use href="#i-wa"/></svg><span><a href="https://wa.me/5521987561627" target="_blank" rel="noopener">WhatsApp: (21) 98756-1627</a></span></li>
+          <li><svg><use href="#i-clock"/></svg><span>Segunda a sexta 8h às 19h</span></li>
+        </ul>
+        <div class="unit__actions">
+          <a href="https://wa.me/5521987561627" class="btn btn-primary" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg> Agendar</a>
+          <a href="https://www.facebook.com/pages/Instituto-Flumignano-de-Medicina/126873914071479" class="btn btn-outline" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg> Facebook</a>
+        </div>
+      </article>
+
+      <!-- CURITIBA -->
+      <article class="unit reveal d1" id="unidade-curitiba">
+        <div class="unit__head">
+          <div class="unit__flag"><svg><use href="#i-pin"/></svg></div>
+          <div><h3>Curitiba</h3><span>Alto da Rua XV</span></div>
+        </div>
+        <ul class="unit__list">
+          <li><svg><use href="#i-pin"/></svg><span>Rua Atílio Bório, 711 Alto da Rua XV, CEP 80045-120 Curitiba/PR</span></li>
+          <li><svg><use href="#i-phone"/></svg><span><a href="tel:+554132647500">+55 (41) 3264-7500</a></span></li>
+          <li><svg><use href="#i-wa"/></svg><span><a href="https://api.whatsapp.com/send?phone=5541996182974&amp;text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">WhatsApp: (41) 99618-2974</a></span></li>
+          <li><svg><use href="#i-clock"/></svg><span>Segunda a sexta 8h às 19h</span></li>
+        </ul>
+        <div class="unit__actions">
+          <a href="https://api.whatsapp.com/send?phone=5541996182974&amp;text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." class="btn btn-primary" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg> Agendar</a>
+          <a href="tel:+554132647500" class="btn btn-outline"><svg><use href="#i-phone"/></svg> Ligar</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="maps-grid reveal">
+      <div class="map-card">
+        <div class="map-card__label"><svg><use href="#i-pin"/></svg> Rio de Janeiro Copacabana</div>
+        <iframe
+          title="Mapa Instituto Flumignano Rio de Janeiro"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Av.%20Nossa%20Senhora%20de%20Copacabana%20664%20Rio%20de%20Janeiro&output=embed"></iframe>
+      </div>
+      <div class="map-card">
+        <div class="map-card__label"><svg><use href="#i-pin"/></svg> Curitiba Alto da Rua XV</div>
+        <iframe
+          title="Mapa Instituto Flumignano Curitiba"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Rua%20At%C3%ADlio%20B%C3%B3rio%20711%20Curitiba%20PR&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a href="#top" class="brand">
+          <img class="brand__crest" src="assets/brasao-web.png" alt="Brasão Flumignano">
+          <span class="brand__text">
+            <span class="brand__name">Flumignano</span>
+            <span class="brand__sub">Instituto de Medicina</span>
+          </span>
+        </a>
+        <p>Uma medicina pautada pela excelência técnica, pelo cuidado humanizado e por sólidos princípios éticos e sociais.</p>
+        <p class="footer__motto">“Verum gaudium res severa est”</p>
+      </div>
+
+      <div>
+        <h4>Navegação</h4>
+        <ul class="footer__links">
+          <li><a href="#equipe">Corpo Clínico</a></li>
+          <li><a href="#sobre">Quem Somos</a></li>
+          <li><a href="#nucleos">Núcleos de Especialidade</a></li>
+          <li><a href="#exames">Exames</a></li>
+          <li><a href="#conteudo">Biblioteca & Pesquisas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Conhecimento & Institucional</h4>
+        <ul class="footer__links">
+          <li><a href="biblioteca.html">Biblioteca Online</a></li>
+          <li><a href="pesquisas.html">Pesquisas e Estudos</a></li>
+          <li><a href="educacao-saude.html">Educação em Saúde</a></li>
+          <li><a href="https://izeta.com.br/" target="_blank" rel="noopener">Instituto iZETA</a></li>
+          <li><a href="https://institutoflumignano.com.br/" target="_blank" rel="noopener">Unidade Curitiba</a></li>
+          <li><a href="https://www.bambu-urgente.flumignano.com" target="_blank" rel="noopener">Bambu Urgente</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Atendimento</h4>
+        <ul class="footer__contact">
+          <li><svg><use href="#i-pin"/></svg><span>Copacabana, 664/704 Rio de Janeiro/RJ</span></li>
+          <li><svg><use href="#i-pin"/></svg><span>Rua Atílio Bório, 711 Curitiba/PR</span></li>
+          <li><svg><use href="#i-phone"/></svg><span>(21) 2548-0472 · (41) 3264-7500</span></li>
+        </ul>
+        <div class="footer__social">
+          <a href="https://wa.me/5521987561627" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>
+          <a href="https://www.facebook.com/pages/Instituto-Flumignano-de-Medicina/126873914071479" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+          <a href="https://www.youtube.com/shorts/F77Ms5kDyag" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bar">
+      <span>© <span id="year"></span> Instituto Flumignano Todos os direitos reservados.</span>
+      <span>Teleconsultas e Presenciais · Rio de Janeiro &amp; Curitiba</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= MODAL DO PROFISSIONAL ================= -->
+<div class="modal" id="docModal" role="dialog" aria-modal="true" aria-labelledby="dmName">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__dialog">
+    <button class="modal__close" data-close aria-label="Fechar"><svg><use href="#i-close"/></svg></button>
+    <div class="modal__top">
+      <div class="modal__avatar" id="dmAvatar"></div>
+      <div class="modal__head">
+        <h3 id="dmName"></h3>
+        <p class="spec" id="dmSpec"></p>
+        <span class="unit"><svg><use href="#i-pin"/></svg> <span id="dmUnit"></span></span>
+      </div>
+    </div>
+    <div class="modal__body">
+      <p id="dmBio"></p>
+      <div class="modal__cta">
+        <a class="btn btn-primary" id="dmMore"><svg><use href="#i-arrow"/></svg> Saiba mais</a>
+        <a class="doc-contact doc-contact--wa" id="dmWa" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>
+        <a class="doc-contact doc-contact--ig" id="dmIg" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+        <a class="doc-contact doc-contact--mail" id="dmEmail" aria-label="E-mail"><svg><use href="#i-mail"/></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FLUTUANTES ================= -->
+<div class="fab-wrap" id="fabWrap">
+  <div class="fab-menu" id="fabMenu">
+    <span class="fab-menu__title">Falar com qual unidade?</span>
+    <a href="https://wa.me/5521987561627" target="_blank" rel="noopener">
+      <span class="ic"><svg><use href="#i-wa"/></svg></span>
+      <span><b>Rio de Janeiro</b><small>(21) 98756-1627</small></span>
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=5541996182974&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">
+      <span class="ic"><svg><use href="#i-wa"/></svg></span>
+      <span><b>Curitiba</b><small>(41) 99618-2974</small></span>
+    </a>
+  </div>
+  <button class="fab fab-wa" id="fabWa" aria-label="Falar no WhatsApp" aria-expanded="false"><svg><use href="#i-wa"/></svg></button>
+</div>
+<button class="fab fab-top" id="toTop" aria-label="Voltar ao topo"><svg><use href="#i-up"/></svg></button>
+
+<script src="script.js"></script>
+<script src="medicos-data.js"></script>
+<script src="medicos.js"></script>
+</body>
+</html>

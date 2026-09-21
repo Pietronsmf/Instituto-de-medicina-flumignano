@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corpo Clínico Instituto Flumignano de Medicina</title>
+<meta name="description" content="Perfil de profissional do corpo clínico do Instituto Flumignano de Medicina.">
+<link rel="icon" type="image/png" href="assets/brasao-web.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="subpage">
+
+<!-- HEADER -->
+<header class="site-header" id="header">
+  <div class="container">
+    <a href="index.html" class="brand" aria-label="Instituto Flumignano de Medicina">
+      <img class="brand__crest" src="assets/brasao-web.png" alt="Brasão Flumignano">
+      <span class="brand__text">
+        <span class="brand__name">Flumignano</span>
+        <span class="brand__sub">Instituto de Medicina</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <a href="index.html#equipe">Corpo Clínico</a>
+      <a href="index.html#sobre">Quem Somos</a>
+      <a href="index.html#nucleos">Núcleos</a>
+      <a href="index.html#exames">Exames</a>
+      <a href="biblioteca.html">Biblioteca</a>
+      <a href="index.html#contato">Contato</a>
+      <a href="https://wa.me/5521987561627" class="btn btn-gold nav-cta" target="_blank" rel="noopener">Agendar</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://wa.me/5521987561627" class="btn btn-gold nav-cta" target="_blank" rel="noopener"><svg><use href="assets/icons.svg#i-wa"/></svg> Agendar</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="nav-backdrop" id="navBackdrop"></div>
+
+<!-- SUBHERO com o cabeçalho do perfil -->
+<section class="subhero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Trilha">
+      <a href="index.html"><svg><use href="assets/icons.svg#i-home"/></svg> Início</a>
+      <span>/</span><a href="index.html#equipe">Corpo Clínico</a>
+      <span>/</span><span id="bcName">Profissional</span>
+    </nav>
+    <div class="prof__head" id="profHead"></div>
+  </div>
+</section>
+
+<main class="subpage-main">
+  <div class="container">
+    <div class="section-block" id="profBody"></div>
+    <p style="margin-top:8px"><a class="study-link" href="index.html#equipe"><svg viewBox="0 0 24 24" width="16" height="16"><use href="assets/icons.svg#i-back"/></svg> Voltar ao corpo clínico</a></p>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a href="index.html" class="brand">
+          <img class="brand__crest" src="assets/brasao-web.png" alt="Brasão Flumignano">
+          <span class="brand__text"><span class="brand__name">Flumignano</span><span class="brand__sub">Instituto de Medicina</span></span>
+        </a>
+        <p>Uma medicina pautada pela excelência técnica, pelo cuidado humanizado e por sólidos princípios éticos e sociais.</p>
+        <p class="footer__motto">“Verum gaudium res severa est”</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul class="footer__links">
+          <li><a href="index.html#equipe">Corpo Clínico</a></li>
+          <li><a href="index.html#sobre">Quem Somos</a></li>
+          <li><a href="index.html#nucleos">Núcleos</a></li>
+          <li><a href="index.html#exames">Exames</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Conhecimento</h4>
+        <ul class="footer__links">
+          <li><a href="biblioteca.html">Biblioteca Online</a></li>
+          <li><a href="pesquisas.html">Pesquisas e Estudos</a></li>
+          <li><a href="educacao-saude.html">Educação em Saúde</a></li>
+          <li><a href="https://izeta.com.br/" target="_blank" rel="noopener">Instituto iZETA</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <ul class="footer__contact">
+          <li><svg><use href="assets/icons.svg#i-pin"/></svg><span>Copacabana, 664/704 Rio de Janeiro/RJ</span></li>
+          <li><svg><use href="assets/icons.svg#i-phone"/></svg><span>(21) 2548-0472 · (41) 3264-7500</span></li>
+        </ul>
+        <div class="footer__social">
+          <a href="https://wa.me/5521987561627" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="assets/icons.svg#i-wa"/></svg></a>
+          <a href="https://www.facebook.com/pages/Instituto-Flumignano-de-Medicina/126873914071479" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="assets/icons.svg#i-fb"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>© <span id="year"></span> Instituto Flumignano Todos os direitos reservados.</span>
+      <span>Corpo Clínico · Rio de Janeiro &amp; Curitiba</span>
+    </div>
+  </div>
+</footer>
+
+<div class="fab-wrap" id="fabWrap">
+  <div class="fab-menu" id="fabMenu">
+    <span class="fab-menu__title">Falar com qual unidade?</span>
+    <a href="https://wa.me/5521987561627" target="_blank" rel="noopener">
+      <span class="ic"><svg><use href="assets/icons.svg#i-wa"/></svg></span>
+      <span><b>Rio de Janeiro</b><small>(21) 98756-1627</small></span>
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=5541996182974&amp;text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">
+      <span class="ic"><svg><use href="assets/icons.svg#i-wa"/></svg></span>
+      <span><b>Curitiba</b><small>(41) 99618-2974</small></span>
+    </a>
+  </div>
+  <button class="fab fab-wa" id="fabWa" aria-label="Falar no WhatsApp" aria-expanded="false"><svg><use href="assets/icons.svg#i-wa"/></svg></button>
+</div>
+<button class="fab fab-top" id="toTop" aria-label="Voltar ao topo"><svg><use href="assets/icons.svg#i-up"/></svg></button>
+
+<!-- Perfil do profissional (renderizado a partir de medicos-data.js) -->
+<script src="medicos-data.js"></script>
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var id = params.get("id");
+  var list = window.MEDICOS || [];
+  var d = list.filter(function (m) { return m.slug === id; })[0];
+  var WA = window.MEDICOS_WA || {};
+  var head = document.getElementById("profHead");
+  var body = document.getElementById("profBody");
+  var bc = document.getElementById("bcName");
+
+  if (!d) {
+    if (bc) bc.textContent = "Profissional";
+    head.innerHTML = '<h1>Profissional não encontrado</h1>';
+    body.innerHTML = '<p>O perfil solicitado não existe. <a href="index.html#equipe">Voltar ao corpo clínico</a>.</p>';
+    return;
+  }
+
+  document.title = d.name + " Instituto Flumignano de Medicina";
+  if (bc) bc.textContent = d.name;
+
+  var photo = d.img
+    ? '<div class="prof__photo"><img src="' + d.img + '" alt="' + d.name + '" onerror="this.parentNode.classList.add(\'prof__photo--initials\');this.parentNode.textContent=\'' + d.initials + '\'"></div>'
+    : '<div class="prof__photo prof__photo--initials">' + d.initials + "</div>";
+
+  var wa = WA[d.unit] || WA["Rio de Janeiro"] || "#";
+  var contacts =
+    '<a class="doc-contact doc-contact--wa" href="' + wa + '" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="assets/icons.svg#i-wa"/></svg></a>';
+  if (d.instagram) contacts += '<a class="doc-contact doc-contact--ig" href="' + d.instagram + '" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="assets/icons.svg#i-ig"/></svg></a>';
+  if (d.email) contacts += '<a class="doc-contact doc-contact--mail" href="mailto:' + d.email + '" aria-label="E-mail"><svg><use href="assets/icons.svg#i-mail"/></svg></a>';
+
+  head.innerHTML =
+    photo +
+    '<div class="prof__meta">' +
+      '<span class="prof__loc"><svg><use href="assets/icons.svg#i-pin"/></svg> ' + d.unit + "</span>" +
+      "<h1>" + d.name + "</h1>" +
+      '<p class="prof__spec">' + d.spec + "</p>" +
+      '<div class="prof__contacts">' + contacts + "</div>" +
+    "</div>";
+
+  body.innerHTML =
+    '<span class="eyebrow">Corpo Clínico</span>' +
+    '<h2 class="block-title">Sobre o profissional</h2>' +
+    "<p class=\"block-lead\">" + d.bio + "</p>" +
+    '<div class="callout" style="margin-top:26px"><div class="callout__txt"><h2>Agende uma consulta</h2>' +
+    "<p>Atendimento por teleconsulta e presencial na unidade de " + d.unit + ".</p></div>" +
+    '<a class="btn btn-gold" href="' + wa + '" target="_blank" rel="noopener"><svg><use href="assets/icons.svg#i-wa"/></svg> Falar no WhatsApp</a></div>';
+})();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
